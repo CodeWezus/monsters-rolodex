@@ -11,6 +11,7 @@ const App = () => {
   const [filteredMonsters, setFilteredMonsters] = useState(monsters);
 
   // useEffect can be used to create side effects. useEffect will execute a function if the data in the dependency array changes.
+  // useEffect(() => {function}, [dependency array])
   useEffect(() =>{
     fetch('https://jsonplaceholder.typicode.com/users')
     .then((response) => response.json())
